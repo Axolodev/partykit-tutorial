@@ -9,7 +9,6 @@ const MIN_OPTIONS = 2;
 const MAX_OPTIONS = 8;
 
 export default function PollMaker() {
-  console.log({ PARTYKIT_URL });
   const [newOption, setNewOption] = useState<string>("");
   const [title, setTitle] = useState("");
   const [options, setOptions] = useState<string[]>([]);
