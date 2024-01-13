@@ -36,8 +36,6 @@ export default function Home() {
     redirect(`/${id}`);
   }
 
-  console.log({ PARTYKIT_URL });
-
   return (
     <>
       <form action={createPoll}>

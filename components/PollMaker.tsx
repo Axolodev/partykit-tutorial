@@ -3,11 +3,13 @@
 import { useRef, useState } from "react";
 import Button from "./Button";
 import Input from "./Input";
+import { PARTYKIT_URL } from "@/app/env";
 
 const MIN_OPTIONS = 2;
 const MAX_OPTIONS = 8;
 
 export default function PollMaker() {
+  console.log({ PARTYKIT_URL });
   const [newOption, setNewOption] = useState<string>("");
   const [title, setTitle] = useState("");
   const [options, setOptions] = useState<string[]>([]);
