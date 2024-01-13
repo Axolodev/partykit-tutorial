@@ -1,10 +1,8 @@
-import Button from "@/components/Button";
-import PollMaker from "@/components/PollMaker";
-import Balloon from "@/components/Balloon";
 import { Poll } from "@/app/types";
+import Balloon from "@/components/Balloon";
+import PollMaker from "@/components/PollMaker";
 import { redirect } from "next/navigation";
 import { PARTYKIT_URL } from "./env";
-import Input from "@/components/Input";
 
 const randomId = () => Math.random().toString(36).substring(2, 10);
 
@@ -37,6 +35,8 @@ export default function Home() {
 
     redirect(`/${id}`);
   }
+
+  console.log({ PARTYKIT_URL });
 
   return (
     <>
